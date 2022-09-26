@@ -6,7 +6,8 @@ public class CarrinhoCompras extends Produto{
 
     ArrayList<Produto> produtos;
 
-    public CarrinhoCompras(){
-        this.produtos;
+   public CarrinhoCompras(){
+        this.produtos = new ArrayList<Produto>();
+
     }
 }
