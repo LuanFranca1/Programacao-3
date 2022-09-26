@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+
+public class Clientes extends Cliente {
+
+
+    ArrayList <Cliente> Clientes;
+
+
+}
+
+// diferentes clientes
+import Sistema.CarrinhoCompras;
+
+public class Cliente {
+
+    private String nome;
+    private String Carrinho;
+
+
+    public Cliente( ){
+
+        private CarrinhoCompras carrinhoCompras;
+    }
+
+
+
+
+}
