@@ -1,0 +1,40 @@
+package Sistema;
+
+public class Produto {
+
+    private String produto;
+    private double valor;
+    private int vendasProdutos;
+
+
+    public Produto() {
+        this.produto = produto;
+        this.valor = valor;
+        this.vendasProdutos = vendasProdutos;
+    }
+
+    public String getProduto() {
+        return produto;
+    }
+
+    public void setProduto(String produto) {
+        this.produto = produto;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+    public int getVendasProdutos() {
+        return vendasProdutos++;
+    }
+
+    public void setVendasProdutos(int vendasProdutos) {
+        this.vendasProdutos = vendasProdutos;
+    }
+}
+
