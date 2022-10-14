@@ -1,0 +1,75 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class Menu {
+
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    char op;
+    String nome, cpf, rg, cargo;
+    
+    ArrayList<Paciente> paciente;
+    // ArrayList<> pacientes = new Paciente();
+    do {
+
+      menu();
+      op = in.next().charAt(0);
+
+      switch (op) {
+        case '1':
+          System.out.println("Informe o seu nome");
+          nome = in.next();
+          System.out.println("Informe o seu cpf");
+          cpf = in.next();
+          System.out.println("Informe o seu rg");
+          rg = in.next();
+          paciente = new Paciente(nome, cpf, rg);
+          
+          pacientes.inserirPaciente(paciente); // metodo a ser criado, menu.adicionarPaciente tb pode ser
+          System.out.println(nome + ", seu cadastro foi realizado com sucesso!");
+          break;
+        case '2':
+          System.out.println("Informe o seu nome");
+          nome = in.next();
+          System.out.println("Informe o seu cpf");
+          cpf = in.next();
+          System.out.println("Informe o seu rg");
+          rg = in.next();
+          System.out.println("Informe o seu cargo");
+          cargo = in.next();
+
+          menu.inserirFuncionario(nome, cpf, rg, cargo); // metodo a ser criado, menu.adicionarFuncionario tb pode ser
+          System.out.println(nome + ", seu cadastro foi realizado com sucesso!");
+          break;
+        case '3':
+
+        case '4':
+
+        case '5':
+
+        case '6':
+
+        case '7':
+
+        case '8':
+
+        case '0':
+          System.out.println("Ate logo!");
+        default:
+          System.out.println("Opção invalida");
+      }
+    } while (op != '0');
+  }
+
+  public static void menu() {
+    System.out.println("Digite 1 para se cadastrar (paciente)");
+    System.out.println("Digite 2 para se cadastrar (funcionario)");
+    System.out.println("Digite 3 para ver todos os paciente");
+    System.out.println("Digite 4 para ver todos os funcionario");
+    System.out.println("Digite 5 para ver um paciente");
+    System.out.println("Digite 6 para ver um funcionario");
+    System.out.println("Digite 7 para atualizar funcionario");
+    System.out.println("Digite 8 para atualizar paciente");
+    System.out.println("Digite 0 para sair");
+  }
+}
