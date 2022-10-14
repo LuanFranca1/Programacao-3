@@ -1,0 +1,8 @@
+package usuario;
+
+public enum Banco {
+  Bradesco,
+  Itau,
+  BancoDoBrasil
+  Santander
+}
