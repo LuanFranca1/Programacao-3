@@ -1,0 +1,12 @@
+package usuario;
+
+private TipoDeMedico tipoDeMedico;
+
+public class Medico extends Funcionario {
+
+    private double salario = 5000;
+
+  public void passaReceita(Paciente marcar) {
+  }
+
+}
