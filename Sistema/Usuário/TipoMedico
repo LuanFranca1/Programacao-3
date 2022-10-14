@@ -1,0 +1,9 @@
+package usuario;
+
+public enum TipoDeMedico {
+  Cardiologista, 
+  Neurologista,
+  ClínicoGeral,
+  Ortopedista,
+  Oftalmologista
+}
