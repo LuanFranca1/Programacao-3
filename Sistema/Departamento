@@ -1,0 +1,16 @@
+public class Departamento extends Funcionario{
+
+  public void depADM(){
+    
+  }
+  public void depCardio(){
+    
+  }
+  public void depNeuro(){
+    
+  }
+  public void depUrgEme(){
+    
+  }
+  
+}
