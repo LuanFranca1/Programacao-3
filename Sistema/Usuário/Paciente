@@ -1,0 +1,43 @@
+package usuario;
+
+import java.util.ArrayList;
+
+public class Paciente extends Informacoes {
+
+  private ArrayList<Informacoes> pacientes;
+  
+  public Paciente(String nome, String cpf, String rg, ArrayList<Informacoes> pacientes) {
+    super(nome, cpf, rg);
+    this.pacientes = new ArrayList();
+  }
+  public boolean pacienteExistente(String nome, String rg, String cpf) {
+    Informacoes aux;
+    aux = new Informacoes(nome, cpf, rg);
+    if (aux.getNome() != null && aux.getCpf() != null && aux.getRg() != null) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  public void inserirPaciente(String nome, String cpf, String rg) {
+    // Informacoes aux;
+    // aux = new Informacoes (nome, cpf, rg);
+    if (pacienteExistente(nome, cpf, rg) == true) {
+      // Paciente já existe
+    } else {
+      pacientes.add(new Informacoes(nome, cpf, rg));
+      // paciente n existe
+    }
+  }
+  /*public int qtdPacientes(String nome, String cpf, String rg) {
+    int aux = 0;
+    if (pacienteExistente(nome, cpf, rg) == true) {
+      aux++;
+    }
+    return aux;
+  }*/
+  // public void marcarConsulta() {
+  //   if (pacienteExistente(nome, cpf, rg) == true) {
+  //   }
+  // }
+}
