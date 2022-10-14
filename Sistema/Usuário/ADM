@@ -1,0 +1,11 @@
+package usuario;
+
+public class ADM extends Funcionario{
+
+    private double salario = 4000;
+    
+    public void calcularSalario(){
+        System.out.println(salario);
+    }
+    
+}
