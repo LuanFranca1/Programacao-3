@@ -1,0 +1,29 @@
+package usuario;
+
+public class DadoBancario {
+  private String agencia;
+  private String conta;
+  private Banco banco;
+
+  public DadoBancario(String agencia, String conta, Banco banco) {
+    this.agencia = agencia;
+    this.conta = conta;
+    this.banco = banco;
+  }
+
+  public void setAgencia(String agencia) {
+    this.agencia = agencia;
+  }
+
+  public void setConta(String conta) {
+    this.conta = conta;
+  }
+
+  public String getAgencia() {
+    return agencia;
+  }
+
+  public String getConta() {
+    return conta;
+  }
+}
