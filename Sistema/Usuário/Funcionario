@@ -1,0 +1,48 @@
+package usuario;
+
+import java.util.ArrayList;
+public class Funcionario extends Informacoes{
+  protected String cargo;
+  protected double salario;
+  
+  private ArrayList <Informacoes> funcionarios;
+
+  public Funcionario(String nome, String cpf, String rg, String cargo, ArrayList<Informacoes> funcionarios) {
+    super(nome, cpf, rg);
+    this.funcionarios = new ArrayList();
+    this.cargo = cargo;
+  }
+
+  public String getCargo () {
+    return cargo;
+  }
+
+
+  public boolean funcionarioExistente(String nome,String rg,String cpf, String cargo){
+    Informacoes aux;
+    aux = new Informacoes (nome, cpf, rg);
+    if(aux.getNome() != null && aux.getCpf() != null &&     
+      aux.getRg() != null && cargo != null){
+      return true;
+    }else{
+      return false;
+    }
+  }
+  public void inserirFuncionario(String nome, String cpf, String rg, String cargo) {
+    // Informacoes aux;
+    // aux = new Informacoes (nome, cpf, rg);
+    if (funcionarioExistente(nome, cpf, rg, cargo) == true) {
+      // Funcionário já existe
+    } else {
+      funcionarios.add(new Informacoes(nome, cpf, rg, cargo));
+      // Funcionário não existe
+    }
+  }
+  /*public int qtdFuncionarios(String nome, String cpf, String rg, String cargo) {
+    int aux = 0;
+    if (funcionarioExistente(nome, cpf, rg, cargo) == true) {
+      aux++;
+    }
+    return aux;
+  }*/
+}
